@@ -1,0 +1,6 @@
+defaults: &defaults
+  key: foo
+  secret: bar
+
+development:
+  <<: *defaults
