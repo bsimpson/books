@@ -15,6 +15,6 @@ class AuthorizeController < ApplicationController
 
   def index
     user = Goodreads.find_by_user_id(session[:user_id])
-    render :inline => user.get_shelf.inspect
+    render :inline => user.get_isbns(per_page: 200).inspect
   end
 end

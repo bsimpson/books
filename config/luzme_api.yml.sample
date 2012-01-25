@@ -1,0 +1,6 @@
+defaults: &defaults
+  app_key: foo
+  app_id: bar
+
+development:
+  <<: *defaults
